@@ -32,16 +32,25 @@ To run this project locally:
 
 ```sh
 # Clone the repository
-git clone <REPOSITORY_URL>
-
-# Navigate to the project directory
-cd wealth-wave
+git clone <https://github.com/Leelasatyavijayeswarikopalli-22/Theme-Finance.git>
 
 # Install the necessary dependencies
 npm i
 
+#add the below code to app.tsx [before  default app]
+(which is at the last)
+return (
+    <>
+    <div></div>
+    </>
+  );
+};
+
 # Start the development server with auto-reloading and an instant preview
 npm run dev
+
+#ctrl+click on the localhost link to open the website
+
 ```
 
 ## Project Structure
