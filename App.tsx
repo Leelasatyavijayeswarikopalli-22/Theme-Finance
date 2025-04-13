@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -60,7 +60,7 @@ import CyberInsurance from "./pages/insurance/CyberInsurance";
 
 const queryClient = new QueryClient();
 
-const App = () => (
+const App = () => {
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <AuthProvider>
@@ -126,6 +126,11 @@ const App = () => (
       </AuthProvider>
     </TooltipProvider>
   </QueryClientProvider>
+return (
+  <>
+  <div></div>
+  </>
 );
+};
 
 export default App;
